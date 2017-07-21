@@ -131,6 +131,28 @@ config = {
             },
             debug: false
         },
+        database: {           
+            client: 'mysql',
+            connection: {
+				host     : process.env.MY_host,
+				user     : process.env.MY_user,
+				password : process.env.MY_pass,
+            database : process.env.MY_db,
+            charset  : 'utf8'
+            },
+            pool: {
+                    min: 2,
+                    max: 20
+            }
+        },
+        privacy: {
+            useUpdateCheck: false,
+            useGoogleFonts: false,
+            useGravatar: true,
+            useRpcPing: true,
+            useStructuredData: true
+        },
+        fileStorage: false,
         server: {
             // Host to be passed to node's `net.Server#listen()`
             host: '127.0.0.1',
