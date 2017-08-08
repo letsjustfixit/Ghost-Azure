@@ -71,7 +71,7 @@ config = {
             },
             debug: false
         },
-        database: {           
+        database: {
             client: 'mysql',
             connection: {
 				host     : process.env.MY_host,
@@ -131,7 +131,7 @@ config = {
             },
             debug: false
         },
-        database: {           
+        database: {
             client: 'mysql',
             connection: {
 				host     : process.env.MY_host,
